@@ -24,5 +24,9 @@ The tool can be installed on a Linux VM running in a Laptop or a server.
 - In distributed mode, the OS images can be published from a single central instance of the tool.
 - Site local instance of the tool pulls the required images from the central instance.
 
+### Configuring PXE Boot Menu Entries using EasyPXE Web-UI
 ![PXE Boot using EasyPXE](easypxe.png)
+The PXE Boot menu items for different OS installations can be easily added using Web-UI.
+
+
 
