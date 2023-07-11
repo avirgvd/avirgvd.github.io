@@ -2,4 +2,4 @@ theme: jekyll-theme-minimal
 title: Govind Avireddi's projects
 logo: /newbma-logo.png
 description: Bookmark this to keep an eye on my project updates!
-show_downloads: true
+show_downloads: false

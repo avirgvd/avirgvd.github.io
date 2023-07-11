@@ -9,21 +9,27 @@ EasyPXE is a versatile tool supporting multiple formats of custom OS images. Ref
 
 The tool can be installed on a Linux VM running in a Laptop or a server.
 
-**EasyPXE Features**
+**Features**
 
 - Intuitive Web-UI simplifies PXE services setup processes.
-- Provisions OS images for network booting of PXE enabled client devices.
-- Creates custom OS image by cloning drives of the reference client device.
-- Deploys CentOS 7 over network using bootable ISO image.
-- Deploys Windows 10 over network using the custom images created using MDT/LiteTouch.
-- Deployes Windows 10 and Windows Server over network using bootable WinPE images.
-- Customize PXE boot menu with multiple boot entries for offering multiple OS deployment options on the client device.
-- Utilizes iPXE for faster loading of boot images with HTTP as TFTP can be very slow for large OS images.
-- Uses HTTP for faster loading of boot images and reduced provisioning times.
+- Install OS using PXE booting on PC's, Servers, Point-of-Sale machines, any PXE enabled device.
+- Supports network booting of RHEL, CentOS, Windows 10, Windows Server and [Clonezilla Live](https://clonezilla.org/).
+- Support for bootable WinPE images for Windows 10 and Windows Server.
+- Support for Windows 10 custom images created using MDT/LiteTouch.
+- Enabled by [Clonezilla Live](https://clonezilla.org/), backup and restore the client devices directly using EasyPXE server internal storage.
+- Easily create multiple boot menu entries in the PXE boot screen.
+- Serves iPXE for fast loading of boot images and packages over network using HTTP which is much faster compared to TFTP.
 - Supports UEFI as well as Legacy BIOS on client devices.
-- Works with or without DHCP service in the network.
+- Internal DHCP service can be enabled optionally when there is no DHCP available in the LAN.
+- Works with existing DHCP service in the LAN.
 
-### Configuring PXE Boot Menu Entries using EasyPXE Web-UI
+**Internal Components**
+- dnsmasq (DNS masquerade) for PXE, TFTP and DHCP.
+- iPXE for networking booting.
+- Samba - for sharing additional packages for Windows installation and storage for Clonezilla cloning.
+- NGINX - for web-UI.
+
+### Configuring PXE Boot Menu Entries using Web-UI
 The PXE Boot menu items for different OS installations can be easily added using Web-UI.
 ![PXE Boot using EasyPXE](easypxe.png)
 
