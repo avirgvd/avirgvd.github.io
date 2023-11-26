@@ -26,7 +26,7 @@ The tool can be installed on a Linux VM running in a Laptop or a server.
 **Internal Components**
 - dnsmasq (DNS masquerade) for PXE, TFTP and DHCP.
 - iPXE for networking booting.
-- Samba - for sharing additional packages for Windows installation and storage for Clonezilla cloning.
+- Samba - for sharing additional packages for Windows installation and storing Clonezilla cloning.
 - NGINX - for web-UI.
 
 ### Configuring PXE Boot Menu Entries using Web-UI
