@@ -1,5 +1,5 @@
 
-# About EasyPXE (https://github.com/avirgvd/easypxe)
+# About EasyPXE 
 EasyPXE simplifies PXE network boot process for OS deployment.
 It reduces manual effort in setting up PXE services required for network-boot based OS deployment. The web-UI takes minimal inputs from the user and discovers most of the network settings automatically to configure the tool for PXE net-boot.
 
@@ -33,5 +33,6 @@ The tool can be installed on a Linux VM running in a Laptop or a server.
 The PXE Boot menu items for different OS installations can be easily added using Web-UI.
 ![PXE Boot using EasyPXE](easypxe.png)
 
+Sources at [Github](https://github.com/avirgvd/easypxe)
 
 
